@@ -1,0 +1,43 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package online.retail.communication.grpc.generated;
+
+message CheckQuantityRequest {
+    string productName = 1;
+}
+
+message CheckQuantityResponse {
+    int32 quantity = 1;
+}
+
+message AddStockRequest {
+    string productName = 1;
+    int32 value = 2;
+    bool isSentByPrimary = 3;
+}
+
+message AddStockResponse {
+    bool status = 1;
+}
+
+message PlaceOrderRequest {
+    string productName = 1;
+    int32 quantity = 2;
+    bool isSentByPrimary = 3;
+}
+
+message PlaceOrderResponse {
+    bool status = 1;
+}
+
+service CheckQuantityService {
+    rpc checkQuantity(CheckQuantityRequest) returns (CheckQuantityResponse);
+}
+
+service AddStockService {
+    rpc addStock(AddStockRequest) returns (AddStockResponse);
+}
+
+service PlaceOrderService {
+    rpc placeOrder(PlaceOrderRequest) returns (PlaceOrderResponse);
+}

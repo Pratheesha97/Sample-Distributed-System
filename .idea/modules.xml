@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Sample-Distributed-System.iml" filepath="$PROJECT_DIR$/.idea/Sample-Distributed-System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/communication-client.iml" filepath="$PROJECT_DIR$/client/communication-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/communication-server.iml" filepath="$PROJECT_DIR$/server/communication-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/synchronization-distributed-lock/synchronization-distributed-lock.iml" filepath="$PROJECT_DIR$/synchronization-distributed-lock/synchronization-distributed-lock.iml" />
+    </modules>
+  </component>
+</project>
